@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="card bg-dark text-white border-secondary">
+  <div class="card-header font-weight-bold border-secondary">
+    <h2>Aquecimento<span style="color: grey; padding-left: 20px;"><i class="fas fa-temperature-low"></i></h2>
+  </div>
+  <div class="card-body">
+      <p style="font-size: 15px;">Exterior: (?)Cº</p>
+      <hr style="border-top: 1px solid grey;">
+      <p style="font-size: 15px;">Interior: (?)Cº</p>
+      <hr style="border-top: 1px solid grey;">
+      <form class="form-inline">
+          <input type="number" class="form-control mb-2 mr-sm-2" placeholder="Temperatura">
+          <div class="form-check">
+            <!-- Default switch -->
+            <div class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="customSwitches">
+              <label class="custom-control-label" for="customSwitches">Automático</label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">(on/off)</button>
+        </form>
+    </div>
+  </div>
+
+  {% endblock %}
